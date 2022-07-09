@@ -1,2 +1,4 @@
-package pages;public class RestaurantPage {
+package pages;
+
+public class RestaurantPage {
 }
