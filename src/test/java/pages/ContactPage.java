@@ -1,2 +1,4 @@
-package pages;public class ContactPage {
+package pages;
+
+public class ContactPage {
 }
