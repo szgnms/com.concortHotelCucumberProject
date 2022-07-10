@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testng-results failed="1" passed="0" skipped="0" total="1">
-    <suite duration-ms="9953" name="io.cucumber.core.plugin.TestNGFormatter">
-        <test duration-ms="9953" name="io.cucumber.core.plugin.TestNGFormatter">
-            <class name="TC_001 Homepage">
-                <test-method duration-ms="9768" finished-at="2022-07-10T12:21:35.014228100Z" name="Homepage Links Control" started-at="2022-07-10T12:21:25.231450900Z" status="FAIL">
+    <suite duration-ms="4290" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="4290" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="TC_002 Homepage">
+                <test-method duration-ms="4069" finished-at="2022-07-10T14:27:44.814298400Z" name="Homepageh Links Controlh" started-at="2022-07-10T14:27:40.720934400Z" status="FAIL">
                     <exception class="java.lang.NullPointerException">
                         <message><![CDATA[Given go to concorthotel url................................................passed
 Then check avaibility of the homeButton.....................................failed
-And check avaibility of the roomsButton.....................................skipped
+Then check avaibility of the roomsButton....................................skipped
 And check avaibility of the restaurantButton................................skipped
 And check avaibility of the aboutButton.....................................skipped
 And check avaibility of the blogButton......................................skipped
 And check avaibility of the contactButton...................................skipped
 And check avaibility of the loginButton.....................................skipped
 ]]></message>
-                        <full-stacktrace><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.homePage.homePageButton" is null
-	at stepDefinitions.US_001StepDefs.TC_001StepDefs.checkAvaibilityOfTheHomeButton(TC_001StepDefs.java:25)
-	at ✽.check avaibility of the homeButton(file:///C:/Users/ms/Documents/GitHub/com.concortHotelCucumberProject/src/test/resources/features/US01_Features/TC_001.feature:7)
+                        <full-stacktrace><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.checkpagelinks" is null
+	at stepDefinitions.US_001StepDefs.TC_001StepDefs.checkAvaibilityOfTheHomeButton(TC_001StepDefs.java:31)
+	at ✽.check avaibility of the homeButton(file:///C:/Users/ms/Documents/GitHub/com.concortHotelCucumberProject/src/test/resources/features/US01_Features/TC_002.feature:7)
 ]]></full-stacktrace>
                     </exception>
                 </test-method>
