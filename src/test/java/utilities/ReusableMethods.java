@@ -4,6 +4,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import pages.HomePage;
+import pages.LoginPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -157,6 +159,24 @@ public class ReusableMethods {
         WebElement ddm=Driver.getDriver().findElement(By.id(byId));
         Select select=new Select(ddm);
         select.selectByValue(writeText);
+    }
+
+    public void anasayfa() {
+        Driver.getDriver().get("https://qa-environment.concorthotel.com");
+        Driver.getDriver().findElement(By.id("details-button")).click();
+        Driver.getDriver().findElement(By.id("proceed-link")).click();
+    }
+
+    public void adminGiris() {
+        HomePage homePage=new HomePage();
+        LoginPage loginPage=new LoginPage();
+        Driver.getDriver().get("https://qa-environment.concorthotel.com");
+        Driver.getDriver().findElement(By.id("details-button")).click();
+        Driver.getDriver().findElement(By.id("proceed-link")).click();
+        homePage.loginButton.click();
+        loginPage.userNameBox.sendKeys(ConfigReader.getProperty("chAdminUser"));
+        loginPage.passwordBox.sendKeys(ConfigReader.getProperty("chAdminPassword"));
+        loginPage.logInButton.click();
     }
 
 
