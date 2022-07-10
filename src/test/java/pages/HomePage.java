@@ -3,13 +3,15 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
+import utilities.ReusableMethods;
 
 import java.util.List;
 
 public class HomePage {
 
 
-    @FindBy (id = "navHome")
+    @FindBy (xpath = "(//a[@class='nav-link'])[1]")
     public WebElement homePageButton;
 
     @FindBy (id = "navRooms")

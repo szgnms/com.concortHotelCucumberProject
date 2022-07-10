@@ -161,8 +161,8 @@ public class ReusableMethods {
         select.selectByValue(writeText);
     }
 
-    public void anasayfa() {
-        Driver.getDriver().get("https://qa-environment.concorthotel.com");
+    public static void anasayfa() {
+        Driver.getDriver().get(ConfigReader.getProperty("concortHotelUrl"));
         Driver.getDriver().findElement(By.id("details-button")).click();
         Driver.getDriver().findElement(By.id("proceed-link")).click();
     }

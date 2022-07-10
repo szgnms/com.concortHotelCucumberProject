@@ -13,7 +13,7 @@ import org.testng.annotations.DataProvider;
         },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "(@cs1)",
+        tags = "(@Tc001)",
         dryRun = false
 )
 
